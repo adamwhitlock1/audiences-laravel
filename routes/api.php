@@ -18,4 +18,3 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/all-audiences', 'AllAudiencesController@all');
-Route::get('/redis-test', 'AllAudiencesController@redisTest');
