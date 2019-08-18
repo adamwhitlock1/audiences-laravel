@@ -1,0 +1,73 @@
+/*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');*/
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+/* Components */
+@import "buttons";
+@import "form";
+@import "nprogress";
+
+@import "table";
+
+/* Utilities */
+@import "tailwindcss/utilities";
+
+.VuePagination {
+    margin: 20px;
+}
+
+.VuePagination__count {
+    margin-top: 10px;
+}
+
+.VuePagination__pagination-item .active {
+    border: 2px solid orange;
+    padding: 2px 8px;
+    border-radius: 35px;
+}
+
+.VueTables__limit-field .form-control {
+    @apply shadow-lg border border-solid inline-block;
+    margin-left: 5px;
+}
+
+.VueTables__limit {
+    text-align: right;
+}
+
+.table-responsive {
+    margin-top: 15px;
+}
+
+.form-inline {
+    display: inline-block;
+}
+
+.VueTables__search-field .form-control {
+    @apply shadow-lg  rounded-full px-4 py-2 ml-2 inline-block;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+.VueTables__date-filter {
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.glyphicon-chevron-down:before {
+    content: "▼"
+}
+
+.glyphicon-chevron-up:before {
+    content: "▲"
+}
+
+.table td:first-child, .table td:nth-child(3) {
+    width: 110px;
+}

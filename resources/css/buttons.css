@@ -1,0 +1,52 @@
+* {
+    transition: .3s;
+}
+
+.btn-indigo {
+  @apply px-6 py-3 rounded-full bg-blue-700 shadow text-white text-sm font-bold whitespace-no-wrap;
+
+  &:hover, &:focus {
+                @apply bg-blue-500 shadow-lg text-white;
+            }
+}
+
+ .btn-green {
+  @apply px-6 py-3 rounded-full bg-green-500 shadow text-white text-sm font-bold whitespace-no-wrap;
+
+  &:hover, &:focus {
+                @apply bg-green-700 shadow-lg text-white;
+            }
+}
+
+.btn-orange {
+    @apply rounded-full px-3 py-2 border;
+    background-color: #ff7713;
+    border-color: #ff7713
+}
+.btn-orange:hover {
+    @apply rounded-full px-3 py-2 bg-transparent border;
+}
+
+.btn-spinner,
+.btn-spinner:after {
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.btn-spinner {
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: .2em solid white;
+  border-right: .2em solid white;
+  border-bottom: .2em solid white;
+  border-left: .2em solid transparent;
+  transform: translateZ(0);
+  animation: spinning 1s infinite linear;
+}
+
+@keyframes spinning {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
